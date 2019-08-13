@@ -84,6 +84,10 @@ function concertSearch() {
 function songSearch() {
     var searchQuery = "";
 
+    if (!searchQuery) {
+        searchQuery = "The+Sign+Ace+of+Base"
+    }
+
     for (var i = 3; i < nodeArgs.length; i++) {
 
         if (i > 3 && i < nodeArgs.length) {
@@ -115,6 +119,10 @@ function songSearch() {
 }
 function movieSearch() {
     var searchQuery = "";
+
+    if (!searchQuery) {
+        searchQuery = "Mr.+Nobody"
+    }
 
     for (var i = 3; i < nodeArgs.length; i++) {
 
